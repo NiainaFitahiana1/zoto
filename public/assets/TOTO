@@ -1,0 +1,79 @@
+@extends('layout.app')
+@section('corps')
+    @include('partial.navbar')
+    <section class="home">
+        <div class="container">
+            <div class="row d-flex justify-content-center ">
+                <div class="col-md-10">
+                    <h5 class="text-center" style="font-weight: bold">
+                        Nous sommes ravis de vous accueillir ici, un espace où les routes se croisent et les horizons s'ouvrent. Que vous recherchiez un moyen de transport sûr ou une aventure palpitante, vous êtes au bon endroit. Parcourez notre plateforme pour trouver les solutions qui répondent à vos besoins et laissez-nous vous accompagner dans votre prochaine aventure.
+                    </h5>
+                </div>
+                
+            </div>
+        </div>
+        {{-- <div class="container-fluid">
+            <div class="row d-flex justify-content-center nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <div class="col-md-3 p-1 px-3 row">
+                    <button style="border: none" id="v-pills-home-tab" style="width: 200px" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" class="nav-link active bg-warning py-3 shadow rounded h5 d-flex align-items-center justify-content-center">
+                        VOITURE
+                    </button>
+                </div>
+                <div class="col-md-3 p-1 px-3 row">
+                    <button style="border: none" class="nav-link bg-warning py-3 shadow rounded h5 d-flex align-items-center justify-content-center" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                        DEUX ROUES
+                    </button>
+                </div>
+                <div class="col-md-3 p-1 px-3 row">
+                    <button style="border: none" class="nav-link bg-warning py-3 shadow rounded h5 d-flex align-items-center justify-content-center" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                        BATEAUX
+                    </button>
+                </div>
+                <div class="col-md-3 p-1 px-3 row">
+                    <button style="border: none" class="nav-link bg-warning py-3 shadow rounded h5 d-flex align-items-center justify-content-center" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        FERRARIES
+                    </button>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">Salut tous le monde</div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Salama tous le monde</div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Hello tous le mone</div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Ni hao tous le monde</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    heillols
+                </div>
+            </div>
+        </div> --}}
+        <div class="container-fluid px-4">
+            {{-- <div class="row d-flex justify-content-center">
+                <div class="nav  nav-pills col-md-10 d-flex justify-content-center " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="btn btn-warning mb-2 mx-2 h5 btn-lg active" id="v-pills-voiture-tab" style="width: 200px" data-bs-toggle="pill" data-bs-target="#v-pills-voiture" type="button" role="tab" aria-controls="v-pills-voiture" aria-selected="true">HUMAIN</button>
+                  <button class="btn btn-warning mb-2 mx-2 h5 btn-lg" id="v-pills-profile-tab" style="width: 200px" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">BAGAGE</button>
+                  <button class="btn btn-warning mb-2 mx-2 h5 btn-lg" id="v-pills-messages-tab" style="width: 200px" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">COMMISSION</button>
+                  <button class="btn btn-warning mb-2 mx-2 h5 btn-lg" id="v-pills-settings-tab" style="width: 200px" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">VACCANCES</button>
+                </div>
+                <div class="tab-content col-md-11" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-voiture" role="tabpanel" aria-labelledby="v-pills-voiture-tab">
+                     <img src={{asset("asset/picture/route(6).jpg")}} alt="" class="img-fluid rounded" style="height: 400px">
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <img src={{asset("asset/picture/route(3).jpg")}} alt="" class="img-fluid rounded" style="height: 400px">
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <img src={{asset("asset/picture/route(1).jpg")}} alt="" class="img-fluid rounded" style="height: 400px">
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <img src={{asset("asset/picture/route(2).jpg")}} alt="" class="img-fluid rounded" style="height: 400px">
+                  </div>
+                </div>
+              </div>
+        --}}
+    </div> 
+    </section>
+
+@endsection
